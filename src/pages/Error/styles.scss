@@ -1,0 +1,25 @@
+.errorWrapper {
+  .fourNotFour {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 200px;
+  }
+
+  .errorMessage {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .homeLinkWrapper {
+    text-align: center;
+    margin-bottom: 100px;
+
+    .homeIcon {
+      width: 30px;
+      margin: 0 auto;
+    }
+  }
+}

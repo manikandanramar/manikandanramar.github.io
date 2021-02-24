@@ -1,0 +1,32 @@
+.overviewWrapper {
+  padding: 10px;
+
+  .titleContainer {
+    padding: 10px;
+    background:  rgba(156, 154, 154, 0.2);
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Verdana, Geneva, sans-serif;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .childrenWrapper {
+    .children {
+      display: inline-flex;
+      overflow: scroll;
+      width: 100%;
+      overflow-y: hidden;
+    }
+  }
+}
+
+@media screen and (min-width: 1640px){
+  .overviewWrapper {
+    width: 1600px;
+    margin: 0 auto;
+  }
+}

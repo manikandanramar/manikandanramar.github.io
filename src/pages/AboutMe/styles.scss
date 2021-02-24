@@ -1,0 +1,80 @@
+@import "../../styles/variables.scss";
+
+.aboutMe {
+  padding: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  .myImage {
+    height: 200px;
+    box-shadow: 0 2px 6px $grey010;
+    border-radius: 15px;
+  }
+
+  .content {
+    padding: 0 30px;
+
+    .title {
+      font-family: $commonFontFamily;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .domain {
+      font-family: $commonFontFamily;
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    .descriptionOne {
+      text-align: justify;
+      font-family: $commonFontFamily;
+      font-size: 18px;
+    }
+
+    .descriptionTwo {
+      @extend .descriptionOne;
+      margin: 15px;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .descriptionThree {
+      @extend .descriptionOne;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutMe {
+    flex-direction: column;
+
+    .myImage {
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    .content {
+      padding: 0;
+      padding-top: 30px;
+      
+      .title {
+        text-align: center;
+      }
+
+      .domain {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .aboutMe {
+    width: 900px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,82 @@
+@import "../../styles/variables.scss";
+
+.footerContent {
+  background: $creamGrey;
+  margin-bottom: 2px;
+
+  .footerWrapper {
+    .footerTitle {
+      text-align: center;
+      font-family: $commonFontFamily;
+      font-size: 15px;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+    }
+  
+    .footerText {
+      text-align: center;
+      font-family: $commonFontFamily;
+      font-size: 12px;
+      padding: 20px;
+      color: white;
+      border-bottom: 2px solid white;
+    }
+  }
+  
+  .followUsWrapper {
+    .followUsTitle {
+      text-align: center;
+      font-family: $commonFontFamily;
+      font-size: 15px;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+    }
+  
+    .followUsLinks {
+      display: flex;
+      justify-content: center;
+
+      .socialMediaIcon {
+        width: 30px;
+        height: 30px;
+        filter: invert(100%);
+        margin: 10px;
+      }
+
+      .socialMediaIcon:hover {
+        filter: invert(0);
+        background: white;
+      }
+    }
+  }
+}
+
+.copyrightFooter {
+  background: $creamGrey;
+  color: white;
+  text-align: center;
+  font-family: $commonFontFamily;
+  font-size: 12px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .footerContent {
+    display: flex;
+    justify-content: center;
+  
+    .footerWrapper {
+      width: 40%;
+
+      .footerText {
+        border: none;
+      }
+    }
+    
+    .followUsWrapper {
+      width: 40%;
+    }
+  }
+}
