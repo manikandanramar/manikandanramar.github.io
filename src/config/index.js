@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         image: '/static/images/github.svg',
-        link: 'https://github.com/manikandan-ramar'
+        link: 'https://github.com/manikandanramar'
       },
     ],
   },
