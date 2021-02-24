@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = require('./src/config');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const webpackConfig = {
     entry: './src/app.js',
@@ -55,6 +56,11 @@ module.exports = (env, argv) => {
   
     if (argv.mode === 'production') {
         webpackConfig.mode = 'production';
+        webpackConfig.plugins.push(new CopyPlugin({
+            patterns: [
+              { from: "static", to: "static" }
+            ],
+          }))
     }
   
     return webpackConfig;
