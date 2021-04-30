@@ -38,11 +38,11 @@ export default class Home extends PureComponent {
         </Helmet> */}
         <div className={styles.cover} >
           <div className={styles.title} >
-            {title}
-            <div className={styles.caption} >{caption}</div>
+            Coming Soon
+            {/* <div className={styles.caption} >{caption}</div> */}
           </div>
         </div>
-        <AboutMe />
+        {/* <AboutMe /> */}
       </div>
     );
   }

@@ -17,9 +17,9 @@ class Application extends PureComponent {
         <Helmet>
           <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png"/>
         </Helmet>
-        <NavBar />
+        {/* <NavBar /> */}
           {this.props.children}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

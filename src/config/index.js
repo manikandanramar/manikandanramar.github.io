@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'MANIKANDAN RAMAR',
+  title: 'Manikandan Ramar',
   caption: 'Engineer | Creator | YouTuber | Blogger',
   menus: [
     { name: 'Home', to: '/' },
