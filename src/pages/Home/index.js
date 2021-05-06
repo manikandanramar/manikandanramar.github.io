@@ -33,16 +33,7 @@ export default class Home extends PureComponent {
   render() {
     return (
       <div className={styles.home} >
-        {/* <Helmet>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106649859-2"></script>
-        </Helmet> */}
-        <div className={styles.cover} >
-          <div className={styles.title} >
-            Coming Soon
-            {/* <div className={styles.caption} >{caption}</div> */}
-          </div>
-        </div>
-        {/* <AboutMe /> */}
+        <AboutMe />
       </div>
     );
   }

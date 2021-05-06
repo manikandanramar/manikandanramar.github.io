@@ -19,7 +19,7 @@ class Application extends PureComponent {
         </Helmet>
         {/* <NavBar /> */}
           {this.props.children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }
