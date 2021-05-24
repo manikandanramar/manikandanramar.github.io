@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+.acryllic {
+    background: rgba(0,0,0,0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}

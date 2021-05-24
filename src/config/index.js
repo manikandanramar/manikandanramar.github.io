@@ -3,17 +3,17 @@ module.exports = {
   caption: 'Engineer | Creator | YouTuber | Blogger',
   menus: [
     { name: 'Home', to: '/' },
-    // { name: 'blog', to: '/blog' },
-    // { name: 'Videos', to: '/videos' },
-    // { name: 'About Me', to: '/aboutme' },
-    // {
-    //   name: 'More',
-    //   drop: [
-    //     { name: 'Reviews', to: '/reviews' },
-    //     { name: 'Overviews', to: '/overviews' },
-    //     { name: 'Top Fives', to: '/top5' }
-    //   ]
-    // },
+    { name: 'blog', to: '/blog' },
+    { name: 'Videos', to: '/videos' },
+    { name: 'About Me', to: '/aboutme' },
+    {
+      name: 'More',
+      drop: [
+        { name: 'Reviews', to: '/reviews' },
+        { name: 'Overviews', to: '/overviews' },
+        { name: 'Top Fives', to: '/top5' }
+      ]
+    },
   ],
   videosPath: '/videos',
   footer: {
@@ -48,7 +48,8 @@ module.exports = {
       },
     ],
   },
-  ytLink: 'https://www.youtube.com/channel/UCxSkn2rZm7PHRGeOad7YXUw', 
+  ytLink: 'https://www.youtube.com/channel/UCxSkn2rZm7PHRGeOad7YXUw',
+  logo: "/static/images/logo.svg",
   me: '/static/images/me.png',
   whatsapp: '/static/images/whatsapp.png',
   profile: '/static/images/profile.png',

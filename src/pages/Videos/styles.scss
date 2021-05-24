@@ -1,0 +1,12 @@
+@import '../../styles/common.scss';
+
+.videos {
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+
+        .videoLink {
+            padding: 5px 15px;
+        }
+    }
+}
