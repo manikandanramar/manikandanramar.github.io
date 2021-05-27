@@ -34,7 +34,9 @@ class Videos extends PureComponent {
             <div className={styles.videos} >
                 <div className={styles.contentWrapper} >
                     {
-                        videos.length && videos.map((video, index) => <VideoCard video={video} key={index} />)
+                        videos.length
+                        ? videos.map((video, index) => <VideoCard video={video} key={index} />)
+                        : null
                     }
                 </div>
                     {

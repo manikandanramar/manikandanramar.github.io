@@ -37,46 +37,48 @@ export default class NavBar extends PureComponent {
   render() {
     return (
       <nav className={styles.navBar} >
-        <div className={styles.contentWrapper} >
-          <a className={styles.logoHolder} href="/" >
-            <Image className={styles.logo} source={logo} />
-          </a>
-          <Button className={styles.menuToggler} onClick={this.onMenuToggle} >
-            <div className={`${styles.one} ${this.state.menuButtonClass}`} ></div>
-            <div className={`${styles.two} ${this.state.menuButtonClass}`} ></div>
-            <div className={`${styles.three} ${this.state.menuButtonClass}`} ></div>
-          </Button>
-          <div className={`${styles.menuWrapper} ${this.state.menuClass}`} >
-            <ul className={styles.navBarMenu} >
-              {
-                menus.map((item, mIndex) => {
-                  if (item.to) {
-                    const itemClass = this.props.pathname === item.to
-                      ? `${styles.navBarMenuItem} ${styles.active}`
-                      : styles.navBarMenuItem;
-                    return (
-                      <li key={mIndex}>
-                        <Link className={itemClass} to={item.to} onClick={this.onMenuItemClick} >{item.name}</Link>
-                      </li>
-                    );
-                  } else if (item.drop) {
-                    return (
-                      <li key={mIndex} className={styles.dropDown} >
-                        <Link className={styles.navBarMenuItem} to="#" >{item.name}</Link>
-                        <ul className={styles.dropList} key={mIndex} >
-                          {
-                            item.drop.map((options, index) => {
-                            return (
-                              <li key={index} ><Link className={styles.dropItem} to={options.to} >{options.name}</Link></li>);
-                            })
-                          }
-                        </ul>
-                      </li>
-                    );
-                  }
-                })
-              }
-            </ul>
+        <div className={styles.container} >
+          <div className={styles.contentWrapper} >
+            <a className={styles.logoHolder} href="/" >
+              <Image className={styles.logo} source={logo} />
+            </a>
+            <Button className={styles.menuToggler} onClick={this.onMenuToggle} >
+              <div className={`${styles.one} ${this.state.menuButtonClass}`} ></div>
+              <div className={`${styles.two} ${this.state.menuButtonClass}`} ></div>
+              <div className={`${styles.three} ${this.state.menuButtonClass}`} ></div>
+            </Button>
+            <div className={`${styles.menuWrapper} ${this.state.menuClass}`} >
+              <ul className={styles.navBarMenu} >
+                {
+                  menus.map((item, mIndex) => {
+                    if (item.to) {
+                      const itemClass = this.props.pathname === item.to
+                        ? `${styles.navBarMenuItem} ${styles.active}`
+                        : styles.navBarMenuItem;
+                      return (
+                        <li key={mIndex}>
+                          <Link className={itemClass} to={item.to} onClick={this.onMenuItemClick} >{item.name}</Link>
+                        </li>
+                      );
+                    } else if (item.drop) {
+                      return (
+                        <li key={mIndex} className={styles.dropDown} >
+                          <Link className={styles.navBarMenuItem} to="#" >{item.name}</Link>
+                          <ul className={styles.dropList} key={mIndex} >
+                            {
+                              item.drop.map((options, index) => {
+                              return (
+                                <li key={index} ><Link className={styles.dropItem} to={options.to} >{options.name}</Link></li>);
+                              })
+                            }
+                          </ul>
+                        </li>
+                      );
+                    }
+                  })
+                }
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
