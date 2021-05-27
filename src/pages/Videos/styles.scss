@@ -1,9 +1,13 @@
 @import '../../styles/common.scss';
 
 .videos {
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+
     .contentWrapper {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
 
         .videoLink {
             padding: 5px 15px;

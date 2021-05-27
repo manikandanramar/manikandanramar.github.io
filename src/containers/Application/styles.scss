@@ -1,8 +1,11 @@
+@import "../../styles/common.scss";
+
 .application {
   margin: 0;
   padding: 0;
 
   .appChild {
     padding-top: 50px;
+    background-color: $super-gray;
   }
 }

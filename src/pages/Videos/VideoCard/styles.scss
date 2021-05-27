@@ -1,0 +1,23 @@
+@import '../../../styles/common.scss';
+
+.videoCard {
+    float: left;
+    background-color: $white011;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+
+    .videoContainer {
+        width: 180px;
+
+        .videoThumb {
+            width: 180px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .videoTitle {
+            padding: 10px 0;
+        }
+
+    }
+}

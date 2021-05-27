@@ -2,10 +2,8 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import styles from './styles.scss';
 import { getYoutubeVideos } from '../../redux/modules/youtube';
-import Link from '../../components/Link';
 import Button from '../../components/Button';
-
-const ytBaseUrl = "http://www.youtube.com/watch?v=";
+import VideoCard from './VideoCard';
 
 @connect(state => ({
     videos: state.youtube.list,
@@ -36,9 +34,7 @@ class Videos extends PureComponent {
             <div className={styles.videos} >
                 <div className={styles.contentWrapper} >
                     {
-                        videos.length && videos.map((video, index) => {
-                            return <a key={index} className={styles.videoLink} href={ytBaseUrl + video.id.videoId} target="__blank" >{video.snippet.title}</a>;
-                        })
+                        videos.length && videos.map((video, index) => <VideoCard video={video} key={index} />)
                     }
                     {
                         nextToken
