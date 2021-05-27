@@ -1,22 +1,24 @@
 @import '../../../styles/common.scss';
 
 .videoCard {
-    float: left;
+    display: flex;
+    flex-grow: 1;
     background-color: $white011;
-    padding: 10px;
     margin: 10px;
     border-radius: 15px;
 
     .videoContainer {
+        flex-grow: 1;
         width: 180px;
 
         .videoThumb {
-            width: 180px;
+            width: 100%;
             border-radius: 10px 10px 0 0;
         }
 
         .videoTitle {
-            padding: 10px 0;
+            @extend .littleFont;
+            padding: 10px;
         }
 
     }

@@ -36,12 +36,12 @@ class Videos extends PureComponent {
                     {
                         videos.length && videos.map((video, index) => <VideoCard video={video} key={index} />)
                     }
+                </div>
                     {
                         nextToken
                         ? <Button onClick={this.onMoreClick} >Load More</Button>
                         : null
                     }
-                </div>
             </div>
         );
     }
