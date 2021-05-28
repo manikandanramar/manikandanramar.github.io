@@ -6,6 +6,7 @@ import Button from '../Button';
 import Image from '../Image';
 import { menus, logo } from '../../config'
 import styles from './styles.scss';
+import classnames from 'classnames';
 
 @connect((state) => ({ pathname: state.location.pathname }), {})
 export default class NavBar extends PureComponent {
@@ -15,7 +16,9 @@ export default class NavBar extends PureComponent {
 
   state = {
     menuClass: styles.collapseMenu,
-    menuButtonClass: ''
+    menuButtonClass: '',
+    overItem: '',
+    overDrop: ''
   };
 
   onMenuToggle = () => {
@@ -30,6 +33,23 @@ export default class NavBar extends PureComponent {
 
   onMenuItemClick = () => {
     this.setState({ menuClass: styles.collapseMenu, menuButtonClass: '' });;
+  }
+
+  onOverItem = (index) => {
+    this.setState({ overItem: index });
+  }
+
+  onOverDrop = (index) => {
+    this.setState({ overDrop: index });
+  }
+
+  resetDrop = () => {
+    this.setState({ overItem: '', overDrop: '' });
+  }
+
+  onOutItem = () => {
+    if(!this.state.overDrop)
+    this.setState({ overItem: '' });
   }
 
   menubar = null;
@@ -62,9 +82,9 @@ export default class NavBar extends PureComponent {
                       );
                     } else if (item.drop) {
                       return (
-                        <li key={mIndex} className={styles.dropDown} >
+                        <li key={mIndex} className={styles.dropDown} onMouseOver={() => this.onOverItem(mIndex)} onMouseOut={this.onOutItem} >
                           <Link className={styles.navBarMenuItem} to="#" >{item.name}</Link>
-                          <ul className={styles.dropList} key={mIndex} >
+                          <ul className={classnames(styles.dropList, { [styles.dropDownHover]: this.state.overItem === mIndex })} key={mIndex} onMouseOver={() => this.onOverDrop(mIndex)} onMouseOut={this.resetDrop} >
                             {
                               item.drop.map((options, index) => {
                               return (
