@@ -33,7 +33,8 @@ export default class Home extends PureComponent {
   render() {
     return (
       <div className={styles.home} >
-        <AboutMe />
+        Under Construction
+        {/* <AboutMe /> */}
       </div>
     );
   }

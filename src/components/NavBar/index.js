@@ -60,7 +60,8 @@ export default class NavBar extends PureComponent {
         <div className={styles.container} >
           <div className={styles.contentWrapper} >
             <a className={styles.logoHolder} href="/" >
-              <Image className={styles.logo} source={logo} />
+              {/* <Image className={styles.logo} source={logo} /> */}
+              Manikandan Ramar
             </a>
             <Button className={styles.menuToggler} onClick={this.onMenuToggle} >
               <div className={`${styles.one} ${this.state.menuButtonClass}`} ></div>
