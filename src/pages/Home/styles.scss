@@ -1,8 +1,8 @@
-@import "../../styles/variables.scss";
+@import "../../styles/common.scss";
 
 .home {
   .topContainer {
-    background-image: linear-gradient(to bottom right, #1eb854, #00ff59);
+    background-image: linear-gradient(to bottom right, #6504ff, #cc01ff);
     height: 100px;
   }
 
@@ -17,6 +17,52 @@
       margin-top: -100px;
       border-radius: 25px;
       box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+
+      .content {
+        padding: 0 50px;
+
+        .profile {
+          @extend .dataBox;
+          width: 288px;
+          display: grid;
+          justify-items: center;
+          
+
+          .profilePic {
+            @extend .addMask;
+            margin: 15px;
+          }
+
+          .profileDetails {
+            padding: 0 0 15px;
+
+            .name {
+              @extend .commonFont;
+              font-weight: bold;
+              text-align: center;
+            }
+
+            .tags {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+
+              .tag {
+                @extend .littleFont;
+                padding: 5px 10px;
+                background-color: $so-gray;
+                border-radius: 10px;
+                margin-left: 5px;
+                margin-top: 5px;
+
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,19 +1,22 @@
 module.exports = {
   title: 'Manikandan Ramar',
-  caption: 'Engineer | Creator | YouTuber | Blogger',
+  positions: [
+    'ReactJS Developer',
+    'Marketing Professional',
+    'Proprietor'
+  ],
+  tags: [
+    'Engineer',
+    'Creator',
+    'Entrepreneur',
+    'Youtuber',
+    'Student'
+  ],
   menus: [
     { name: 'Home', to: '/' },
     { name: 'blog', to: '/blog' },
     { name: 'Videos', to: '/videos' },
-    { name: 'About Me', to: '/aboutme' },
-    {
-      name: 'More',
-      drop: [
-        { name: 'Reviews', to: '/reviews' },
-        { name: 'Overviews', to: '/overviews' },
-        { name: 'Top Fives', to: '/top5' }
-      ]
-    },
+    { name: 'About Me', to: '/aboutme' }
   ],
   videosPath: '/videos',
   footer: {

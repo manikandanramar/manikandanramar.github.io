@@ -7,14 +7,31 @@
 }
 
 .commonFont {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    font-weight:100;
-    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .littleFont {
     @extend .commonFont;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 100;
+}
+
+.dataBox {
+    background-color: $white011;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.addMask {
+    mask-image: $mask;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-image: $mask;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-position-x: center;
+    -webkit-mask-position-y: center;
 }
