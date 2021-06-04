@@ -1,10 +1,6 @@
 module.exports = {
   title: 'Manikandan Ramar',
-  positions: [
-    'ReactJS Developer',
-    'Marketing Professional',
-    'Proprietor'
-  ],
+  about: "A passionate MBA graduate with almost 2 years of experience as a Full stack web developer and a Marketing professional with 10 months of experience.",
   tags: [
     'Engineer',
     'Creator',

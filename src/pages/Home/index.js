@@ -3,7 +3,7 @@ import { func, array } from 'prop-types';
 import NavBar from '../../components/NavBar';
 import Image from '../../components/Image';
 import styles from './styles.scss';
-import { title, tags, me } from '../../config';
+import { title, tags, me, about } from '../../config';
 
 export default class Home extends PureComponent {
   static propTypes = {
@@ -25,6 +25,7 @@ export default class Home extends PureComponent {
                   <Image className={styles.profilePic} source={me} />
                   <div className={styles.profileDetails} >
                     <div className={styles.name} >{title}</div>
+                    <div className={styles.about} >{about}</div>
                     <div className={styles.tags} >
                       {
                         tags.map((tag, i) => (<span key={i} className={styles.tag} >{tag}</span>))
