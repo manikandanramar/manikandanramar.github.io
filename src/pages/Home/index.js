@@ -3,7 +3,7 @@ import { func, array } from 'prop-types';
 import NavBar from '../../components/NavBar';
 import Image from '../../components/Image';
 import styles from './styles.scss';
-import { title, tags } from '../../config';
+import { title, tags, me } from '../../config';
 
 export default class Home extends PureComponent {
   static propTypes = {
@@ -22,7 +22,7 @@ export default class Home extends PureComponent {
 
                 {/* Profile Details */}
                 <div className={styles.profile} >
-                  <Image className={styles.profilePic} source="https://daisyui.com/tailwind-css-component-profile-1@94w.png" />
+                  <Image className={styles.profilePic} source={me} />
                   <div className={styles.profileDetails} >
                     <div className={styles.name} >{title}</div>
                     <div className={styles.tags} >
