@@ -44,6 +44,17 @@
               text-align: center;
             }
 
+            .positions {
+              margin-top: 10px;
+
+              .position {
+                @extend .littleFont;
+                text-align: center;
+                line-height: 18px;
+                color: $go-gray;
+              }
+            }
+
             .about {
               @extend .littleFont;
               background-color: rgba(172, 32, 243, .1);

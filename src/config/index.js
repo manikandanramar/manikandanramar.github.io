@@ -1,6 +1,11 @@
 module.exports = {
   title: 'Manikandan Ramar',
-  about: "A passionate MBA graduate with almost 2 years of experience as a Full stack web developer and a Marketing professional with 10 months of experience.",
+  positions: [
+    'MBA Student',
+    'Web Developer',
+    'Proprietor @manichips'
+  ],
+  about: "I am a web developer who is mastering business administration and also serving Kerala's own banana chips across India through online platforms.",
   tags: [
     'Engineer',
     'Creator',
