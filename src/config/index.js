@@ -27,27 +27,27 @@ module.exports = {
     followUs: 'Follow Me On',
     socialLink: [
       {
-        image: '/static/images/facebook.svg',
+        image: '/static/images/fb.png',
         link: 'https://www.facebook.com/manikandanramar0'
       },
       {
-        image: '/static/images/instagram.svg',
+        image: '/static/images/ig.png',
         link: 'https://www.instagram.com/manikandanramar'
       },
       {
-        image: '/static/images/twitter.svg',
+        image: '/static/images/tw.png',
         link: 'https://www.twitter.com/ManikandanRamr'
       },
       {
-        image: '/static/images/youtube.svg',
+        image: '/static/images/yt.png',
         link: 'https://www.youtube.com/ManikandanRamar',
       },
       {
-        image: '/static/images/linkedin.svg',
+        image: '/static/images/li.png',
         link: 'https://www.linkedin.com/in/manikandanramar/'
       },
       {
-        image: '/static/images/github.svg',
+        image: '/static/images/gh.png',
         link: 'https://github.com/manikandanramar'
       },
     ],
