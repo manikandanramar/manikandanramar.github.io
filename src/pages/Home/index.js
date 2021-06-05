@@ -3,7 +3,7 @@ import { func, array } from 'prop-types';
 import NavBar from '../../components/NavBar';
 import Image from '../../components/Image';
 import styles from './styles.scss';
-import { title, tags, me, about, positions } from '../../config';
+import { title, tags, me, about, positions, socialLinks } from '../../config';
 
 export default class Home extends PureComponent {
   static propTypes = {
@@ -37,6 +37,17 @@ export default class Home extends PureComponent {
                       }
                     </div>
                   </div>
+                </div>
+
+                {/* Social Media Links */}
+                <div className={styles.socialMedia} >
+                  {
+                    socialLinks.map((media, i) => (
+                      <a key={i} className={styles.socialLink} href={media.link} target="__blank" >
+                        <Image className={styles.socialImage} source={media.image} />
+                      </a>
+                    ))
+                  }
                 </div>
             </div>
           </div>

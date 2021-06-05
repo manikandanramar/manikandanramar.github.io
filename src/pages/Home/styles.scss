@@ -88,6 +88,25 @@
 
           }
         }
+
+        .socialMedia {
+          display: flex;
+          justify-content: space-between;
+          width: 316px;
+          margin-top: 15px;
+
+          .socialLink {
+            @extend .addMask;
+            display: flex;
+            background-color: $white011;
+            padding: 4px;
+            margin-top: 10px;
+
+            .socialImage {
+              width: 40px;
+            }
+          }
+        }
       }
     }
   }
@@ -104,6 +123,13 @@
 
           .profile {
             width: auto;
+          }
+
+          .socialMedia {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            justify-content: space-between;
           }
         }
       }

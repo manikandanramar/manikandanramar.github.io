@@ -13,6 +13,32 @@ module.exports = {
     'Youtuber',
     'Student'
   ],
+  socialLinks: [
+    {
+      image: '/static/images/fb.png',
+      link: 'https://www.facebook.com/manikandanramar0'
+    },
+    {
+      image: '/static/images/ig.png',
+      link: 'https://www.instagram.com/manikandanramar'
+    },
+    {
+      image: '/static/images/tw.png',
+      link: 'https://www.twitter.com/ManikandanRamr'
+    },
+    {
+      image: '/static/images/yt.png',
+      link: 'https://www.youtube.com/ManikandanRamar',
+    },
+    {
+      image: '/static/images/li.png',
+      link: 'https://www.linkedin.com/in/manikandanramar/'
+    },
+    {
+      image: '/static/images/gh.png',
+      link: 'https://github.com/manikandanramar'
+    },
+  ],
   menus: [
     { name: 'Home', to: '/' },
     { name: 'blog', to: '/blog' },
@@ -24,33 +50,7 @@ module.exports = {
     copyrightText: '© MANIKANDAN RAMAR',
     aboutMe: 'About Me',
     aboutText: 'Software and Passion are same, one makes hardware efficient, one makes the life efficient. Think what Passion in Software brings. Looking forward to contribute my part in technology to everyone. ', 
-    followUs: 'Follow Me On',
-    socialLink: [
-      {
-        image: '/static/images/fb.png',
-        link: 'https://www.facebook.com/manikandanramar0'
-      },
-      {
-        image: '/static/images/ig.png',
-        link: 'https://www.instagram.com/manikandanramar'
-      },
-      {
-        image: '/static/images/tw.png',
-        link: 'https://www.twitter.com/ManikandanRamr'
-      },
-      {
-        image: '/static/images/yt.png',
-        link: 'https://www.youtube.com/ManikandanRamar',
-      },
-      {
-        image: '/static/images/li.png',
-        link: 'https://www.linkedin.com/in/manikandanramar/'
-      },
-      {
-        image: '/static/images/gh.png',
-        link: 'https://github.com/manikandanramar'
-      },
-    ],
+    followUs: 'Follow Me On'
   },
   ytLink: 'https://www.youtube.com/channel/UCxSkn2rZm7PHRGeOad7YXUw',
   logo: "/static/images/logo.svg",
