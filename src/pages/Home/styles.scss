@@ -107,6 +107,34 @@
             }
           }
         }
+
+        .skills {
+          @extend .dataBox;
+          padding: 15px;
+          width: 288px;
+          display: grid;
+          margin-top: 25px;
+
+          .skillsContainer {
+            .skill {
+              .skillName {
+
+              }
+
+              .skillLevel {
+                background-color: $grey011;
+                height: 8px;
+                border-radius: 4px;
+
+                .level {
+                  background-color: $creamGreen;
+                  height: 8px;
+                  border-radius: 4px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

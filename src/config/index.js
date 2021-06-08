@@ -39,6 +39,36 @@ module.exports = {
       link: 'https://github.com/manikandanramar'
     },
   ],
+  skills: [
+    {
+      name: "Javascript",
+      level: 8
+    },
+    {
+      name: "ReactJS",
+      level: 7
+    },
+    {
+      name: "Presentation",
+      level: 9
+    },
+    {
+      name: "Team Work",
+      level: 7
+    },
+    {
+      name: "Online Marketing",
+      level: 8
+    },
+    {
+      name: "Planning",
+      level: 10
+    },
+    {
+      name: "Creativity",
+      level: 9
+    },
+  ],
   menus: [
     { name: 'Home', to: '/' },
     { name: 'blog', to: '/blog' },

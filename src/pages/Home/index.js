@@ -3,7 +3,7 @@ import { func, array } from 'prop-types';
 import NavBar from '../../components/NavBar';
 import Image from '../../components/Image';
 import styles from './styles.scss';
-import { title, tags, me, about, positions, socialLinks } from '../../config';
+import { title, tags, me, about, positions, socialLinks, skills } from '../../config';
 
 export default class Home extends PureComponent {
   static propTypes = {
@@ -48,6 +48,22 @@ export default class Home extends PureComponent {
                       </a>
                     ))
                   }
+                </div>
+
+                {/* Skill levels */}
+                <div className={styles.skills} >
+                  <div className={styles.skillsContainer} >
+                    {
+                      skills.map((skill, i) => (
+                        <div key={i} className={styles.skill} >
+                          <div className={styles.skillName} >{skill.name}</div>
+                          <div className={styles.skillLevel} >
+                            <div className={styles.level} style={{  width: `${(skill.level/10)*100}%` }} ></div>
+                          </div>
+                        </div>
+                      ))
+                    }
+                  </div>
                 </div>
             </div>
           </div>
