@@ -52,6 +52,7 @@ export default class Home extends PureComponent {
 
                 {/* Skill levels */}
                 <div className={styles.skills} >
+                  <div className={styles.title} >Skills & Expertise</div>
                   <div className={styles.skillsContainer} >
                     {
                       skills.map((skill, i) => (

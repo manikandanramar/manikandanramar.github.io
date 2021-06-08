@@ -23,7 +23,7 @@
 
         .profile {
           @extend .dataBox;
-          padding: 15px;
+          padding: 20px;
           width: 288px;
           display: grid;
           justify-items: center;
@@ -110,21 +110,34 @@
 
         .skills {
           @extend .dataBox;
-          padding: 15px;
+          padding: 20px;
           width: 288px;
-          display: grid;
           margin-top: 25px;
 
-          .skillsContainer {
-            .skill {
-              .skillName {
+          .title {
+            @extend .commonFont;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
 
+          .skillsContainer {
+            display: grid;
+            gap: .75em;
+
+            .skill {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .skillName {
+                @extend .littleFont;
               }
 
               .skillLevel {
                 background-color: $grey011;
                 height: 8px;
                 border-radius: 4px;
+                width: 150px;
 
                 .level {
                   background-color: $creamGreen;
@@ -158,6 +171,43 @@
             flex-wrap: wrap;
             width: auto;
             justify-content: space-between;
+          }
+
+          .skills {
+            width: auto;
+
+            .skillsContainer {
+              .skill {
+                .skillLevel {
+                  width: 150px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px){
+  .home {
+    .glassContainer {
+  
+      .glass {
+  
+        .content {
+
+          .skills {
+            width: auto;
+
+            .skillsContainer {
+              .skill {
+                .skillLevel {
+                  width: 120px;
+                }
+              }
+            }
           }
         }
       }
