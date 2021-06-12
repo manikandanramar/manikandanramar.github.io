@@ -149,6 +149,23 @@
             }
           }
         }
+
+        .experiences {
+          @extend .dataBox;
+          padding: 20px;
+          width: 288px;
+          margin-top: 25px;
+
+          .title {
+            @extend .commonFont;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+
+          .expList {
+            .exp {}
+          }
+        }
       }
     }
   }
@@ -184,6 +201,10 @@
                 }
               }
             }
+          }
+
+          .experiences {
+            width: auto;
           }
         }
       }

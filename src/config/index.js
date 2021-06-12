@@ -9,9 +9,9 @@ module.exports = {
   tags: [
     'Engineer',
     'Creator',
-    'Entrepreneur',
     'Youtuber',
-    'Student'
+    'Student',
+    'Entrepreneur'
   ],
   socialLinks: [
     {
@@ -67,6 +67,29 @@ module.exports = {
     {
       name: "Creativity",
       level: 9
+    },
+  ],
+  experiences: [
+    {
+      logo: "https://scontent.ftrv1-1.fna.fbcdn.net/v/t1.6435-1/p200x200/82182473_139214584197661_3347895387682766848_n.png?_nc_cat=107&ccb=1-3&_nc_sid=1eb0c7&_nc_ohc=pmmOmP31XUkAX-TjDPn&_nc_ht=scontent.ftrv1-1.fna&tp=30&oh=1434f87128e0506fad26115a8aaf1515&oe=60C92DDD",
+      name: "manichips",
+      description: "It's my creation as an entrepreneur, to help consumers across the country to discover the exquisite, delightful and different taste of Kerala's own banana chips. As a proprietor, I am responsible for everything in Manichips.",
+      position: "Proprietor",
+      period: "Jan 2020 - Present"
+    },
+    {
+      logo: "https://scontent.ftrv1-1.fna.fbcdn.net/v/t1.6435-9/61751877_2395464107360921_4199122257521410048_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=CjlEZk-NhkAAX8DQP_G&_nc_ht=scontent.ftrv1-1.fna&oh=2224a82b90334cd9f4d27e6d4f13581c&oe=60CA3D62",
+      name: "Deedi Bajaj",
+      description: "Started with a motive to modernize the marketing strategies at Deedi Bajaj from scratch and made them more accessible online for this internet world. Introduced active social media marketing to improve customer support and reachability.",
+      position: "Digital Marketing Manager",
+      period: "Feb 2019 - Nov 2019"
+    },
+    {
+      logo: "https://www.qburst.com/images/favicon.ico",
+      name: "QBurst",
+      description: "As a software engineer, I develop new user-facing features, build reusable code and libraries for future use, ensure the technical feasibility of UI/UX designs, optimize application for maximum speed and scalability and collaborate with other team members and stakeholders for a better and futuristic product output.",
+      position: "Software Engineer",
+      period: "Oct 2015 - Aug 2017"
     },
   ],
   menus: [
