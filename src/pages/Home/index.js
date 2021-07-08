@@ -39,17 +39,6 @@ export default class Home extends PureComponent {
                   </div>
                 </div>
 
-                {/* Social Media Links */}
-                <div className={styles.socialMedia} >
-                  {
-                    socialLinks.map((media, i) => (
-                      <a key={i} className={styles.socialLink} href={media.link} target="__blank" >
-                        <Image className={styles.socialImage} source={media.image} />
-                      </a>
-                    ))
-                  }
-                </div>
-
                 {/* Skill levels */}
                 <div className={styles.skills} >
                   <div className={styles.title} >Skills & Expertise</div>
@@ -79,6 +68,19 @@ export default class Home extends PureComponent {
                       ))
                     }
                   </div>
+                </div>
+
+                
+
+                {/* Social Media Links */}
+                <div className={styles.socialMedia} >
+                  {
+                    socialLinks.map((media, i) => (
+                      <a key={i} className={styles.socialLink} href={media.link} target="__blank" >
+                        <Image className={styles.socialImage} source={media.image} />
+                      </a>
+                    ))
+                  }
                 </div>
             </div>
           </div>
