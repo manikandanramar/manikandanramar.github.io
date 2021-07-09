@@ -1,5 +1,10 @@
 @import "../../styles/common.scss";
 
+.cardsCommon {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
 .home {
   .topContainer {
     background-image: linear-gradient(to bottom right, #6504ff, #cc01ff);
@@ -22,13 +27,14 @@
 
       .content {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
         padding: 0;
+        flex-flow: wrap column;
+        max-height: 800px;
+        align-content: flex-start;
 
         .profile {
           @extend .dataBox;
+          @extend .cardsCommon;
           padding: 20px;
           width: 288px;
           display: grid;
@@ -99,7 +105,7 @@
           display: flex;
           justify-content: space-between;
           width: 316px;
-          margin-top: 15px;
+          @extend .cardsCommon;
 
           .socialLink {
             @extend .addMask;
@@ -118,7 +124,7 @@
           @extend .dataBox;
           padding: 20px;
           width: 288px;
-          margin-top: 25px;
+          @extend .cardsCommon;
 
           .title {
             @extend .commonFont;
@@ -160,7 +166,7 @@
           @extend .dataBox;
           padding: 20px;
           width: 288px;
-          margin-top: 25px;
+          @extend .cardsCommon;
 
           .title {
             @extend .commonFont;
@@ -186,12 +192,15 @@
         .content {
           display: block;
           padding: 0 15px;
+          max-height: none;
 
           .profile {
+            margin-left: 0;
             width: auto;
           }
 
           .socialMedia {
+            margin-left: 0;
             display: flex;
             flex-wrap: wrap;
             width: auto;
@@ -199,6 +208,7 @@
           }
 
           .skills {
+            margin-left: 0;
             width: auto;
 
             .skillsContainer {
@@ -211,6 +221,7 @@
           }
 
           .experiences {
+            margin-left: 0;
             width: auto;
           }
         }
@@ -226,8 +237,14 @@
       .glass {
   
         .content {
+          max-height: none;
+
+          .profile {
+            margin-left: 0;
+          }
 
           .skills {
+            margin-left: 0;
             width: auto;
 
             .skillsContainer {
@@ -237,6 +254,10 @@
                 }
               }
             }
+          }
+
+          .experiences {
+            margin-left: 0;
           }
         }
       }
